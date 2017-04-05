@@ -6,13 +6,18 @@ body{
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
-background-size: cover;
-
+    background-size: cover;
+    padding-bottom: 20px;
+    paddin-top:20px;
+    margin: 0;
+    display: block;
 	
 	}
 
+
 .container-fluid{
     background-color:rgba(3,127,198,0.74);
+    
 }
 
 #ventajas {
@@ -39,7 +44,7 @@ background-size: cover;
 
 .form-horizontal{
     position: relative;
-    width: 400px;
+    width: 100px;
 	height: auto;
 	padding: 40px 45px 20px;
 	margin-top: 30px;
@@ -494,7 +499,8 @@ footer .col-sm-3 {
 
 
 
-@media only screen and (max-width: 768px) {
+@media screen and (min-width: 768px){
+
     .blocktext3, .blocktext, .blocktext2, .caracteristicas {
 		margin-left: auto !important;
 		text-align: center !important;
@@ -617,7 +623,7 @@ footer .col-sm-3 {
       -moz-background-size: cover; 
       -o-background-size: cover; 
       background-size: cover;
-      max-width: 360px;
+     
     }
       
     .container-fluid {
@@ -629,8 +635,9 @@ footer .col-sm-3 {
      -webkit-background-size: cover; 
      -moz-background-size: cover; 
      -o-background-size: cover; 
-     background-size: cover;
-      max-width: 360px;
+     background-size: cover; 
+     padding-top: 48px;
+    padding-bottom: 48px;
     }
     
     .check{
