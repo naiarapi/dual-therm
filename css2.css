@@ -605,7 +605,7 @@ footer .col-sm-3 {
      }     
     }
     
-@media (max-width: 360px) {
+@media (max-width: 768ppx) {
     
     body {
       background-image: url(img/fondo.png) ;
