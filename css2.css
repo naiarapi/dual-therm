@@ -1,42 +1,62 @@
-body{
-	background-image: url(img/fondo.png);
-	min-height:100%;
-	 background-attachment: fixed;
-	-webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    background-size: cover;
-    padding-bottom: 20px;
-    paddin-top:20px;
-    margin: 0;
-    display: block;
-	
-	}
 
-
-.container-fluid{
-    background-color:rgba(3,127,198,0.74);
-    
+.todo{
+  background:url("img/fondo.png") no-repeat; 
+  position: relative;
+  background-size: cover;
+  background-attachment: fixed;
+}  
+.todo:before{
+  background-color: rgba(3,127,198,0.74);
+  content: '';
+  display: block;
+  height: 100%;
+  position: absolute;
+  width: 100%;
 }
 
-#ventajas {
-    margin-top: 0;
-    width: 100%;
-    height:100%;
+.ventajas {
     background-color: white;
 }
 
+.pie{
+	background-color: #333333;
+	
+}
+.ahorra{
+    background-color: #eeeeee;
+    
+}
+.izquierda{
+    padding-top: 30px;
+}
+#titulo-dual{
+    margin-top: 10px;
+    color: white;
+    font-size: 77px;
+    font-family: 'MyriadProLight'
+    
+}
+#texto-dual{
+    margin-top: -10px;
+    margin-bottom: 55px;
+    font-size: 33px;
+    color:white;
+    font-family: "RalewayExtraBold";
+    line-height: 1;
+}
+
+.check{
+    margin-left: 150px;
+}
 .video{
-    position: absolute;
+    
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    margin-left: 100px;
 }
 .embed-responsive{
-   
     width: 100%;
     height: 0;
     padding-bottom: 56.25%;
@@ -44,11 +64,11 @@ body{
 
 .form-horizontal{
     position: relative;
-    width: 100px;
 	height: auto;
-	padding: 40px 45px 20px;
-	margin-top: 30px;
-	margin-left: 100px;
+	padding-top: 30px;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-top: 25px;
 	margin-bottom: 22px;
 	background-color: white;
 	box-shadow: 0px 5px 10px #B5C1C5,white inset;
@@ -58,25 +78,22 @@ body{
 input[type='name']{
 	height: 50px;
 	box-shadow: none;
-	margin-left:-15px;
 	font-family: 'RalewayRegular';
+	
 }
 input[type='tel']{
 	height: 50px;
 	box-shadow: none;
-    margin-left:-15px;
     font-family: 'RalewayRegular';
 }
 input[type='email']{
 	height: 50px;
 	box-shadow: none;
-    margin-left:-15px;
     font-family: 'RalewayRegular';
 }
 input[type='text']{
 	height: 50px;
 	box-shadow: none;
-    margin-left:-15px;
     font-family: 'RalewayRegular';
 }
 .checkbox-inline{
@@ -90,28 +107,37 @@ input[type='text']{
 	font-family: 'RalewayRegular';
 }
 
+#accepto span{
+    color: rgba(3,127,198,0.74); ;
+}
+
+#accepto{
+        margin-top: 4px;
+}
+
+
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
 .tel{
-	margin-left: auto;
-	margin-right: auto;
-	padding-left: 5px;
-	margin-top: 0;
+        
 	font-family: 'RalewaySemiBold';
 	font-size: 18px;
 }
 
 .tel p{
     color: white;
+    
+    
 }
 
 .icono-footer{
     float: left;
-    margin-top: 0px;
 }
 
 
-.texto-footer{
-    margin-left: 5px;
-}
+
 
 #oficina{
     font-family: 'RalewayBold';
@@ -163,35 +189,13 @@ h1.blocktext{
 	font-family: Raleway;
 	font-size: 30px;
 }
-#titulo-dual{
-	float: left;
-	padding: 30px 0;
-    line-height: 1.5;
-    font-size: 77px;
-    color:white;
-    font-family: 'MyriadProLight';
-	margin-bottom: -75px;
-	margin-top: 95px;
-	margin-left: -180px;
-}
+
 
 #titulo-dual span{
     font-family: 'MyriadProBold';
     
 }
-#texto-dual{
-	float: left;
-	padding: 30px 0;
-    font-size: 33px;
-    margin-left: 100px;
-    color:white;
-    font-family: "RalewayExtraBold";
-    line-height: 1;
-    margin-top: 5px;
-    
-    
-    
-}
+
 p.blocktext{
 	text-align: center;
     color: #939393;
@@ -228,31 +232,9 @@ h1.title{
     margin: 0px;
     
 }
-
-
-#ahorra{
-    background-color: #eeeeee;
-    margin-top: 0;
-    width: 100%;
-    height:100%;
-    
-    
-}
-img.logo{
-    float: left;
-    margin-left:  100px;
-    margin-top: 40px;
-}
-
-.centro {
-    margin: auto;
-}
 img {
     max-width: 100%;
-}
-#contenedor input{
-	 display: block;
-}
+}    
 .boton {
     display: inline-block;
     background: #037fc6;
@@ -265,6 +247,21 @@ img {
     
     
 }
+
+.boton:hover{
+    background:#666;
+    
+}
+a:hover{
+    text-decoration: none;
+    color: white;
+}
+
+.boton a{
+  outline: none;
+    border: none;
+    text-decoration: none;
+}
 .center{
     text-align: center;
 }
@@ -273,7 +270,7 @@ a {
     outline: none;
     border: none;
     text-decoration: none;
-   padding-left: 200px;
+    padding-left: 200px;
 }
 
 
@@ -296,18 +293,8 @@ button.boton-simple {
     font-size: 13px;
 }
 
-footer{
-	background-color: #333333;
-	margin-top: 0;
-	padding-top: 40px;
-}
 
-a {
-    color: #666;
-    outline: none;
-    border: none;
-    text-decoration: none;
-}
+
 
 #presupuesto span, .title span {
         color: #037fc6;
@@ -365,7 +352,7 @@ a {
 
 #email-footer{
     line-height: normal;
-    margin-top: -30px;
+    margin-top: -40px;
 }
 #telefono-footer{
     margin-top: -10px;
@@ -392,14 +379,7 @@ a {
     
 }
 
-.check{
-    margin-left: 80px;
-    position: relative;
-    opacity: 1;
-    transform: translate(0);
-    transition-timing-function: cubic-bezier(.175,.885,.32,1.275);
 
-}
 
 .pie-texto{
 	float: left;
@@ -420,27 +400,6 @@ a {
     
    
 }
-footer ul li {
-    padding-bottom: 8px;
-    list-style-type: none;
-}
-
-footer ul li a {
-    font-family: 'RalewaySemiBold';
-    font-size: 18px;
-    color: #fff;
-}
-
-footer .col-sm-3 {
-    margin-bottom: 40px;
-}
-
-
-
-
-.pie{
-    width: 100%;
-}
 #youtube{
     margin-top: -100px;
 }
@@ -448,310 +407,56 @@ footer .col-sm-3 {
     margin-left: -2px;
 }
 
-
-
-@media (max-width: 750px){
-    
-    img { max-width: 100%; }
-    
-	.blocktext3, .blocktext, .blocktext2, .caracteristicas {
-		margin-left: auto !important;
-		text-align: center !important;
-		    font-size: 2.7rem;
-    		line-height: 1.26;
-	}
-	#youtube{
-	    margin-top: 0;
-    }
-    
-      body {
-        background-image: url(img/fondo.png);
-        widht: 100%;
-    }
-     .container-fluid {
-        background-color:rgba(3,127,198,0.74);
-        width: 100%;
-    }
-    
-    footer{
-       width: 100%; 
-    }
-    
-    
-    .check{
-          margin-left:800px;
-        position: relative;
-    }
-     #ahorra{
-          
-         width: 100%;
-    }
-    
-    #ventajas{
-         background-size: cover;
-         width: 100%; 
-    }
-     #titulo-dual{
-         
-        font-size: 60px;
-    } 
+.container {
+    height: auto;
 }
 
 
-
-@media screen and (min-width: 768px){
-
-    .blocktext3, .blocktext, .blocktext2, .caracteristicas {
-		margin-left: auto !important;
-		text-align: center !important;
-		    font-size: 2.7rem;
-    		line-height: 1.26;
-	}
-    
-    input[type='name'],input[type='email'], input[type='tel'], input[type='text'] {
-        margin-left: 0px;
-    }
-    
-    body {
-        background-image: url(img/fondo.png);
-        clear:both;
-        widht: 100%;
-    }
-      
-    .container-fluid {
-        background-color:rgba(3,127,198,0.74);
-           clear:both;
-        width: 100%;
-    }
-    
+/* Custom, iPhone Retina */ 
+@media only screen and (min-width : 320px) {
     .check{
-            margin-left: 150px;
-        position: relative;
-    }
-    
-    #ventajas {
         
-         width: 100%;
+        margin-left: 80px;
     }
-    
-    #ahorra{
-      
-         width: 100%;
-    }
-    
-    #titulo-dual, #texto-dual, .video, #especialista {
-        margin-left: 0px;
-    }
-    
-   
-    .contacto{
-        margin:auto;
-        height: auto;
-    }
-    
-   
-    .form-horizontal {
-        margin-bottom: 30px;
-        margin-top: 30px;
-        width: auto;
-    }
-    
+   .tel p {
+    color: white;
+    margin-top: 10px;
+}
   
-    .col-sm-3 {
-        width: 25%;
-        float: left;
-        position: relative;
-        min-height: 1px;
+}
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+     .check{
+        margin-left: 240px;
     }
+    
    
-	footer .pie-texto {
-        font-family: 'RalewayBold';
-        font-size: 18px;
-        color: #fff;
-        padding-bottom: 15px;
-        font-weight: normal;
-        font-style: normal;
-        text-rendering: optimizeLegibility;
-        display: block;
-        line-height: 1.1;
-        min-height: 45px;
-        text-align:center;
-        margin: 0px 0px 15px 0px;
-	} 
-	
-	footer #donde{
-	    padding-bottom: 15px;
-	     min-height: 40px;
-        margin: 0px 0px 0px 0px;
-        paddig-right: -20px;
-        float: left;
-	}
+    
+}
 
 
-	.contacto{
-    	position: relative;
-        min-height: 1px;
-        padding-right: 15px;
-        padding-left: 15px;
-
-	}  
-	
-	#youtube{
-	    margin-top: 0;
-    }
+@media (min-width: 768px) {
+ .check{    
     
-    .col-md-3 {
-    width: 100%;
-    float:left;
-    }
-        
-     #titulo-dual{
-         
-      font-size: 52px;
-     }     
-    }
-    
-@media (max-width: 768ppx) {
-    
-    body {
-      background-image: url(img/fondo.png) ;
-      -webkit-background-size: 100%; 
-      -moz-background-size: 100%; 
-      -o-background-size: 100%; 
-      background-size: 100%; 
-      -webkit-background-size: cover; 
-      -moz-background-size: cover; 
-      -o-background-size: cover; 
-      background-size: cover;
+       margin-left: 300px;
+ }    
+}
+@media (min-width: 992px) {
+   .check{    
+    margin-left: 100px;
+}    
      
-    }
-      
-    .container-fluid {
-     background-color:rgba(3,127,198,0.74); 
-     -webkit-background-size: 100%; 
-     -moz-background-size: 100%; 
-     -o-background-size: 100%; 
-     background-size: 100%; 
-     -webkit-background-size: cover; 
-     -moz-background-size: cover; 
-     -o-background-size: cover; 
-     background-size: cover; 
-     padding-top: 48px;
-    padding-bottom: 48px;
-    }
     
-    .check{
-       margin-left: 350px;
-        position: relative;
-    }
-    
-    #ventajas {
-        
-         width: 100%;
-    }
-    
-    #ahorra{
-      
-         width: auto;
-    }
-    
-    #titulo-dual, #texto-dual, .video, #especialista {
-        margin-left: 0px;
-    }
-    .contacto{
-        margin:auto;
-        height: auto;
-    }
-    
+}
+
+@media (min-width: 1200px) {
+   .check{ 
+        margin-left: 152px;
+   }    
+}
+
    
-    .form-horizontal {
-        margin-bottom: 30px;
-        margin-top: 30px;
-        width: auto;
-    }
-    
-    a {
-        padding-left: 0;
-    }
-    .col-sm-3 {
-        width: 25%;
-        float: left;
-        position: relative;
-        min-height: 1px;
-    }
-   
-	footer .pie-texto {
-        font-family: 'RalewayBold';
-        font-size: 18px;
-        color: #fff;
-        padding-bottom: 15px;
-        font-weight: normal;
-        font-style: normal;
-        text-rendering: optimizeLegibility;
-        display: block;
-        line-height: 1.1;
-        min-height: 45px;
-        text-align:center;
-        margin: 0px 0px 15px 0px;
-	} 
-	
-	footer #donde{
-	    padding-bottom: 15px;
-	     min-height: 40px;
-        margin: 0px 0px 0px 0px;
-        paddig-right: -20px;
-        float: left;
-	}
-	
-
-	.contacto{
-    	position: relative;
-        min-height: 1px;
-        padding-right: 15px;
-        padding-left: 15px;
-
-	}  
-	
-	#youtube{
-	    margin-top: 0;
-    }
-    
-    .col-md-3 {
-    width: 100%;
-    float:left;
-    }
-    
-    .blocktext3, .blocktext, .blocktext2, .caracteristicas, .title {
-		margin-left: auto !important;
-		text-align: center !important;
-	    font-size: 2.7rem;
-    	line-height: 1.26;
-	}
-    
-    .img-responsive {
-        margin: 0 auto;
-    }
-    
-     #ahorra{
-          
-         width: 100%;
-    }
-    
-    #ventajas{
-         background-size: cover;
-         width: 100%; 
-    }
-    .blocktext3, .blocktext, .blocktext2, .caracteristicas {
-		margin-left: auto !important;
-		text-align: center !important;
-		    font-size: 2.7rem;
-    		line-height: 1.26;
-	}
-        
-}   
-
-    
-    
 @font-face {
     font-family: "RalewayMedium";
     src: url("fuentes/Raleway-Medium.ttf");
